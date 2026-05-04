@@ -1,0 +1,307 @@
+.app-root {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: radial-gradient(circle at top left, #1f2937 0, #020617 45%, #000 100%);
+  color: #f9fafb;
+}
+
+.app-shell {
+  width: 100%;
+  max-width: 960px;
+  background: rgba(15, 23, 42, 0.92);
+  border-radius: 18px;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  box-shadow: 0 24px 80px rgba(15, 23, 42, 0.9);
+  padding: 24px 24px 20px;
+  backdrop-filter: blur(22px);
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.logo-wrap {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo {
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
+  object-fit: cover;
+  box-shadow: 0 14px 35px rgba(15, 23, 42, 0.8);
+}
+
+.app-title {
+  margin: 0;
+  font-size: 1.6rem;
+  letter-spacing: 0.03em;
+}
+
+.app-subtitle {
+  margin: 4px 0 0;
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+.wallet-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.badge-network {
+  background: rgba(34, 197, 94, 0.12);
+  color: #4ade80;
+  border: 1px solid rgba(74, 222, 128, 0.4);
+}
+
+.badge-account {
+  background: rgba(59, 130, 246, 0.16);
+  color: #bfdbfe;
+  border: 1px solid rgba(59, 130, 246, 0.5);
+}
+
+.app-main {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.section-title {
+  margin: 0 0 8px;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #9ca3af;
+}
+
+.card {
+  background: rgba(15, 23, 42, 0.9);
+  border-radius: 14px;
+  border: 1px solid rgba(148, 163, 184, 0.36);
+  padding: 18px 18px 16px;
+}
+
+.buy-card {
+  margin-bottom: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #e5e7eb;
+}
+
+.input,
+.textarea {
+  border-radius: 10px;
+  border: 1px solid rgba(148, 163, 184, 0.65);
+  background: rgba(15, 23, 42, 0.9);
+  padding: 9px 11px;
+  color: #f9fafb;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: #6b7280;
+}
+
+.input:focus,
+.textarea:focus {
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.7);
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 72px;
+}
+
+.inline-hint {
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.button {
+  border: none;
+  border-radius: 999px;
+  padding: 9px 18px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.08s ease, box-shadow 0.08s ease, background 0.15s ease;
+}
+
+.button-primary {
+  background: linear-gradient(135deg, #4f46e5, #06b6d4);
+  color: #f9fafb;
+  box-shadow: 0 12px 30px rgba(59, 130, 246, 0.55);
+}
+
+.button-primary:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 16px 45px rgba(59, 130, 246, 0.75);
+}
+
+.button-primary:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 8px 24px rgba(59, 130, 246, 0.6);
+}
+
+.button-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.button-secondary {
+  background: transparent;
+  color: #9ca3af;
+  padding-inline: 0;
+}
+
+.memos-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.count-pill {
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+.memos-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-height: 340px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.memo-card {
+  border-radius: 14px;
+  padding: 12px 13px 10px;
+  background: rgba(15, 23, 42, 0.96);
+  border: 1px solid rgba(55, 65, 81, 0.95);
+}
+
+.memo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.memo-name {
+  font-weight: 600;
+  font-size: 0.96rem;
+}
+
+.memo-address {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  font-size: 0.78rem;
+  color: #9ca3af;
+}
+
+.memo-message {
+  margin: 8px 0 6px;
+  font-size: 0.9rem;
+  color: #e5e7eb;
+}
+
+.memo-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.78rem;
+  color: #9ca3af;
+}
+
+.memo-time {
+  color: #9ca3af;
+}
+
+.chip {
+  padding: 3px 8px;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.5);
+}
+
+.empty-state {
+  text-align: center;
+  padding: 32px 8px 26px;
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+.app-footer {
+  margin-top: 18px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(31, 41, 55, 0.9);
+  font-size: 0.8rem;
+  color: #6b7280;
+  text-align: right;
+}
+
+@media (max-width: 640px) {
+  .app-shell {
+    padding: 18px 16px 16px;
+  }
+
+  .app-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .wallet-info {
+    align-items: flex-start;
+  }
+}
